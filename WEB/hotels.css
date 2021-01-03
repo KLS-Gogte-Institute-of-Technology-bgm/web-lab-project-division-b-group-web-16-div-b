@@ -1,0 +1,27 @@
+.button1{
+    background-color: red;
+    border: none;
+    color:white;
+    padding: 13px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+
+}
+
+.button2{
+    background-color: green;
+    border: none;
+    color:white;
+    padding: 13px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+
+}
