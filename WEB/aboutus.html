@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color:black;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color:white;
+            color:black;
+        }
+
+        .topnav a.active {
+            background-color:white;
+            color:black;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="home.html" >HOME</a>
+    <a href="package.html">PACKAGES</a>
+    <a href="Hotels.html">HOTELS</a>
+    <a href="#aboutus" class="active">ABOUT US</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+
+                display: block;
+            }
+        }
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="about-section">
+    <h1>About Our Webpage</h1>
+    <p>Till 19th century tourism in Himachal Pradesh was restricted only to a limited government of pilgrims to a few spiritual destinations in around the health only when the British established their chain of hill stations did tourism receive recognization in in the state tourism activity received a shot in the alarm 1 British declared Shimla the summer capital of India in 1864 post-independence more investment in the infrastructure sector led to the
+        opening of tourism of the state however the biggest boost tourism occur in the middle of 80s and 90s</p>
+    <p>While traditionally Himachal was known as the summer destinations the department of tourism and Civil Aviation has taken special efforts to break the seasonality factor and has developed a diversified tourism products to attract tourists in other seasons to now Himachal is known as a destination for all seasons for all reasons in fact the department has led a special emphasis on the development of activity based tourism and opening up of new destinations to promote tourism in the countryside and to unexplored areas appropriate infrastructure is being developed within available resources by focusing on quality tourist the department aimed at promoting Sustainable Tourism and encouraging private sector to develop tourism related infrastructure in the state without disturbing the existing Ecology and environment.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+                width: 100%
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<h2></h2>
+<p></p>
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="data:image/jpeg;base64,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" style="width:100%">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="email">Email Id</label>
+                <input type="text" id="email" name="emailS" placeholder="Email ID..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Top reviews</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <!--<img src="" alt="Jane" style="width:100%">-->
+            <div class="container">
+                <h2>Jane Doe</h2>
+
+                <p>Amazing pictures im gonna visit himachal for sure thankyou.</p>
+                <p>jane@example.com</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <!-- Font Awesome Icon Library -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: orange;
+                        }
+                    </style>
+                </head>
+                <body>
+
+                <h2>Star Rating</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                </body>
+                </html>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <!--<img src="" alt="Mike" style="width:100%">-->
+            <div class="container">
+                <h2>Mike Ross</h2>
+
+                <p>Appreciable... thankyou for such infomation.</p>
+                <p>mike@example.com</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <!-- Font Awesome Icon Library -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: orange;
+                        }
+                    </style>
+                </head>
+                <body>
+
+                <h2>Star Rating</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+
+                </body>
+                </html>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <!--<img src="" alt="John" style="width:100%">-->
+            <div class="container">
+                <h2>John Doe</h2>
+
+                <p>Be detailed, specfic and honest.</p>
+                <p>john@example.com</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <!-- Font Awesome Icon Library -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: orange;
+                        }
+                    </style>
+                </head>
+                <body>
+
+                <h2>Star Rating</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+                </body>
+                </html>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

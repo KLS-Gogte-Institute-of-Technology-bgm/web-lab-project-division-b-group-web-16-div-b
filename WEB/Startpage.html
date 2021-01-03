@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="Startpage.css">
+</head>
+
+
+<body>
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <img src="https://i2.wp.com/www.inditrip.in/wp-content/uploads/2018/10/Himachal-Pradesh-Tourism.jpg?w=1500&ssl=1" >
+            <h2 class="heading"><i><u><b>HIMACHAL PRADESH</b></u></i></h2>
+            <h3 class="h"><i>Heaven is myth but Himachal is real...Welcome to the Devbhoomi</i></h3>
+            <a href=''>
+                <button class="button button1"><a href="home.html">READY TO EXPLORE!!!</a></button>
+            </a>
+        </div>
+
+        <div class="slide">
+            <img src="https://static.toiimg.com/photo/58046579/.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="https://thetraveleguide.com/wp-content/uploads/2020/09/news-alert-uttarakhand-and-himachal-pradesh-reopen-to-tourists.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2020/06/shimla-1.jpg">
+
+
+        </div>
+    </div>
+    <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+    </div>
+
+
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById( 'radio' + counter ).checked = true;
+        counter++;
+        if(counter > 4){
+            counter= 1;
+        }
+    },5000);
+
+
+</script>
+
+</body>
+
+</html>
